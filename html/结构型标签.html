@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .div{
+            height: 100px;
+            width: 100px;
+            background: #f00;
+        }
+        .header{
+            height: 100px;
+            width: 100px;
+            background: #399;
+        }
+        time{
+            color: #388;
+        }
+    </style>
+    <script>
+        window.onload = function (){
+            var oBtn = document.getElementById("btn1");
+
+            oBtn.onclick = function (){
+                this.dataset.showIndex = 111;
+                alert(this.dataset.index);
+            };
+        };
+    </script>
+</head>
+<body>
+    <div class="div">div</div>
+    <br/>
+    <header class="header">header</header>
+
+    <header>
+        <nav>
+            <a href="javascript:;">首页</a>
+        </nav>
+    </header>
+
+    <header>
+        <hgroup>
+            <h1>LOGO</h1>
+            <h3>专注打野20年</h3>
+        </hgroup>
+    </header>
+
+    <section>
+        <section>
+            <articel>
+                <p>111111</p>
+            </articel>
+        </section>
+        <section>
+            <articel>
+                <p>2222222</p>
+            </articel>
+        </section>
+        <aside>
+            友情链接
+        </aside>
+    </section>
+
+    <figure>
+        <img src="src" alt=""/>
+        <figcaption>这是一张图片</figcaption>
+    </figure>
+
+    <div>2015-8-20是<time datetime="2015-8-20">七夕节</time></div>
+
+    <input type="text" list="list1"/>
+    <datalist id="list1">
+        <option value="css">css</option>
+        <option value="cs">cs</option>
+        <option value="html">html</option>
+        <option value="js">js</option>
+        <option value="nodejs">nodejs</option>
+    </datalist>
+
+    <details>
+        <summary style="outline: none;">布兰登·艾克</summary>
+        <p>JS的作者，制造了很多BUG</p>
+    </details>
+
+    <dialog open="true">
+        <dt>111</dt>
+        <dd>222</dd>
+        <dt>111</dt>
+        <dd>111</dd>
+    </dialog>
+
+    <p>
+        adad爱仕达速度是是分撒旦分撒旦分撒旦大 <mark>红色红色红色</mark> 师法啊是速度速度速度分撒旦速度杀毒安德森安德森
+    </p>
+
+    <form action="?">
+        user: <input type="text" name="user"/><br/>
+        keygen: <keygen name="key"></keygen>
+        <input type="submit"/>
+    </form>
+
+    <progress max="100" value="10"></progress>
+
+    <br/>
+
+    <input id="btn1" type="button" value="aaa" data-index="1"/>
+
+    <br/>
+<footer>
+    <nav>
+        <a href="javascript:;">联系我们</a>
+        <a href="javascript:;">联系电话</a>
+        <a href="javascript:;">地址：<address>宇宙火星村10组5队</address></a>
+    </nav>
+</footer>
+</body>
+</html>
